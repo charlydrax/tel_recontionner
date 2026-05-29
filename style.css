@@ -31,7 +31,7 @@ html { scroll-behavior: smooth; }
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 15px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -57,7 +57,7 @@ img { max-width: 100%; display: block; }
   text-align: center;
   padding: 10px 20px;
   font-size: 13px;
-  font-family: 'Syne', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 600;
   letter-spacing: 0.02em;
   position: sticky;
@@ -86,7 +86,7 @@ img { max-width: 100%; display: block; }
   gap: 2rem;
 }
 .logo {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 1.5rem;
   font-weight: 800;
   color: var(--text);
@@ -141,7 +141,7 @@ img { max-width: 100%; display: block; }
   padding: 14px 28px;
   background: var(--accent);
   color: #000;
-  font-family: 'Syne', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
   font-size: 14px;
   border-radius: 50px;
@@ -160,7 +160,7 @@ img { max-width: 100%; display: block; }
   padding: 14px 28px;
   background: transparent;
   color: var(--text);
-  font-family: 'Syne', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 600;
   font-size: 14px;
   border-radius: 50px;
@@ -211,7 +211,7 @@ img { max-width: 100%; display: block; }
   margin-bottom: 1.5rem;
 }
 .hero-title {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 800;
   line-height: 1.1;
@@ -224,7 +224,7 @@ img { max-width: 100%; display: block; }
 
 .hero-stats { display: flex; gap: 2.5rem; }
 .stat { display: flex; flex-direction: column; }
-.stat strong { font-family: 'Syne', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--accent); }
+.stat strong { font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--accent); }
 .stat span { font-size: 12px; color: var(--text-muted); }
 
 .hero-visual {
@@ -255,10 +255,10 @@ img { max-width: 100%; display: block; }
    ============================================================ */
 .section { padding: 80px 0; }
 .section-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2.5rem; }
-.section-header h2 { font-family: 'Syne', sans-serif; font-size: 1.75rem; font-weight: 700; }
+.section-header h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.75rem; font-weight: 700; }
 .link-more { color: var(--accent); font-size: 14px; font-weight: 600; }
 .link-more:hover { text-decoration: underline; }
-.center-title { font-family: 'Syne', sans-serif; font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 3rem; }
+.center-title { font-family: 'Space Grotesk', sans-serif; font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 3rem; }
 
 /* ============================================================
    PRODUCT CARDS
@@ -323,7 +323,7 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Syne', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
   font-size: 13px;
   color: var(--danger);
@@ -332,12 +332,12 @@ img { max-width: 100%; display: block; }
 
 .product-info { padding: 16px; }
 .product-brand { font-size: 11px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 4px; }
-.product-name { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1rem; margin-bottom: 4px; }
+.product-name { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1rem; margin-bottom: 4px; }
 .product-name a:hover { color: var(--accent); }
 .product-meta { font-size: 12px; color: var(--text-muted); margin-bottom: 4px; }
 .product-battery { font-size: 12px; color: var(--text-muted); margin-bottom: 12px; }
 .product-prices { display: flex; align-items: baseline; gap: 8px; margin-bottom: 12px; }
-.price-current { font-family: 'Syne', sans-serif; font-size: 1.25rem; font-weight: 800; color: var(--accent); }
+.price-current { font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 800; color: var(--accent); }
 .price-original { font-size: 12px; color: var(--text-dim); text-decoration: line-through; }
 .price-save { font-size: 12px; color: var(--grade-a); font-weight: 600; }
 
@@ -348,7 +348,7 @@ img { max-width: 100%; display: block; }
   color: var(--accent);
   border: 1px solid rgba(var(--accent-rgb),.4);
   border-radius: var(--radius);
-  font-family: 'Syne', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 13px;
   font-weight: 700;
   cursor: pointer;
@@ -364,13 +364,13 @@ img { max-width: 100%; display: block; }
 .steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
 .step { padding: 2rem; background: var(--surface2); border-radius: var(--radius-lg); border: 1px solid var(--border); }
 .step-num {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
   color: rgba(var(--accent-rgb),.3);
   margin-bottom: 1rem;
 }
-.step h3 { font-family: 'Syne', sans-serif; font-weight: 700; margin-bottom: .5rem; }
+.step h3 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; margin-bottom: .5rem; }
 .step p { color: var(--text-muted); font-size: 14px; line-height: 1.7; }
 
 /* ============================================================
@@ -392,14 +392,14 @@ img { max-width: 100%; display: block; }
   margin-bottom: 1rem;
   padding: 4px 14px;
   border-radius: 50px;
-  font-family: 'Syne', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 800;
   font-size: 12px;
 }
 .grade-a .grade-label { background: var(--grade-a); color: #000; }
 .grade-b .grade-label { background: var(--grade-b); color: #000; }
 .grade-c .grade-label { background: var(--grade-c); color: #000; }
-.grade-card h3 { font-family: 'Syne', sans-serif; font-size: 1.2rem; font-weight: 700; margin-bottom: .5rem; }
+.grade-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; font-weight: 700; margin-bottom: .5rem; }
 .grade-card p { color: var(--text-muted); font-size: 14px; }
 
 /* ============================================================
@@ -409,9 +409,9 @@ img { max-width: 100%; display: block; }
   padding: 60px 0 40px;
   border-bottom: 1px solid var(--border);
 }
-.page-hero h1 { font-family: 'Syne', sans-serif; font-size: 2.5rem; font-weight: 800; margin-bottom: .5rem; }
+.page-hero h1 { font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem; font-weight: 800; margin-bottom: .5rem; }
 .page-hero p { color: var(--text-muted); }
-.page-title { font-family: 'Syne', sans-serif; font-size: 2rem; font-weight: 800; margin-bottom: 2rem; }
+.page-title { font-family: 'Space Grotesk', sans-serif; font-size: 2rem; font-weight: 800; margin-bottom: 2rem; }
 
 /* ============================================================
    CATALOGUE
@@ -430,7 +430,7 @@ img { max-width: 100%; display: block; }
   position: sticky;
   top: 120px;
 }
-.filters h3 { font-family: 'Syne', sans-serif; font-weight: 700; margin-bottom: 1.5rem; font-size: 1rem; }
+.filters h3 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; margin-bottom: 1.5rem; font-size: 1rem; }
 .filter-group { margin-bottom: 1.5rem; }
 .filter-label { font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: .08em; display: block; margin-bottom: .75rem; }
 .filter-options { display: flex; flex-direction: column; gap: .5rem; }
@@ -489,7 +489,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); margin-top: .5re
 .product-detail-svg { width: 180px; height: 280px; }
 .product-detail-badges { display: flex; gap: .75rem; }
 .product-brand.big { font-size: 13px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: .1em; margin-bottom: .25rem; }
-.product-detail-name { font-family: 'Syne', sans-serif; font-size: 2rem; font-weight: 800; margin-bottom: .5rem; }
+.product-detail-name { font-family: 'Space Grotesk', sans-serif; font-size: 2rem; font-weight: 800; margin-bottom: .5rem; }
 .product-detail-meta { color: var(--text-muted); font-size: 14px; margin-bottom: 1.5rem; }
 .product-detail-prices { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
 .price-current.big { font-size: 2.5rem; }
@@ -501,7 +501,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); margin-top: .5re
 
 .product-desc { color: var(--text-muted); line-height: 1.8; margin-bottom: 1.5rem; font-size: 15px; }
 .product-specs { margin-bottom: 1.5rem; }
-.product-specs h3 { font-family: 'Syne', sans-serif; font-weight: 700; margin-bottom: .75rem; }
+.product-specs h3 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; margin-bottom: .75rem; }
 .product-specs ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
 .product-specs li { font-size: 14px; color: var(--text-muted); }
 .product-specs li::before { content: none; }
@@ -529,7 +529,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); margin-top: .5re
    REVIEWS
    ============================================================ */
 .reviews-section { background: var(--surface); }
-.reviews-section h2 { font-family: 'Syne', sans-serif; font-size: 1.75rem; font-weight: 700; margin-bottom: 2rem; }
+.reviews-section h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.75rem; font-weight: 700; margin-bottom: 2rem; }
 .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 .review-card {
   background: var(--surface2);
@@ -538,7 +538,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); margin-top: .5re
   padding: 1.5rem;
 }
 .review-header { display: flex; align-items: center; gap: .75rem; margin-bottom: .75rem; flex-wrap: wrap; }
-.review-author { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px; }
+.review-author { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 14px; }
 .review-date { font-size: 12px; color: var(--text-dim); margin-left: auto; }
 .review-text { color: var(--text-muted); font-size: 14px; line-height: 1.7; margin-bottom: .75rem; }
 .review-product { font-size: 12px; color: var(--accent); font-weight: 600; }
@@ -560,10 +560,10 @@ input[type="range"] { width: 100%; accent-color: var(--accent); margin-top: .5re
   margin-bottom: 1rem;
 }
 .cart-item-brand { font-size: 11px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: .08em; }
-.cart-item-name { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1rem; }
+.cart-item-name { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1rem; }
 .cart-item-meta { font-size: 12px; color: var(--text-muted); }
 .cart-item-price { font-size: 14px; color: var(--accent); font-weight: 600; }
-.cart-item-total { font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 800; white-space: nowrap; }
+.cart-item-total { font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 800; white-space: nowrap; }
 
 .qty-control {
   display: flex;
@@ -599,13 +599,13 @@ input[type="range"] { width: 100%; accent-color: var(--accent); margin-top: .5re
   position: sticky;
   top: 120px;
 }
-.summary-box h2 { font-family: 'Syne', sans-serif; font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
+.summary-box h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
 .summary-row { display: flex; justify-content: space-between; padding: .6rem 0; font-size: 14px; color: var(--text-muted); }
 .summary-total { font-size: 1.1rem; color: var(--text); border-top: 1px solid var(--border); margin-top: .5rem; padding-top: 1rem; }
 
 .cart-empty { text-align: center; padding: 6rem 2rem; }
 .empty-icon { font-size: 4rem; margin-bottom: 1rem; }
-.cart-empty h2 { font-family: 'Syne', sans-serif; font-size: 1.75rem; margin-bottom: .5rem; }
+.cart-empty h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.75rem; margin-bottom: .5rem; }
 .cart-empty p { color: var(--text-muted); margin-bottom: 2rem; }
 
 .secure-badges { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
@@ -637,7 +637,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); margin-top: .5re
 
 .form-section { margin-bottom: 2.5rem; }
 .form-section-title {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 1.25rem;
@@ -760,7 +760,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); margin-top: .5re
   position: absolute;
   bottom: 1.25rem;
   right: 1.5rem;
-  font-family: 'Syne', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 1.2rem;
   font-weight: 800;
   color: rgba(255,255,255,.8);
@@ -776,7 +776,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); margin-top: .5re
   text-align: center;
 }
 .paypal-logo {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 2rem;
   font-weight: 800;
   color: #009cde;
@@ -811,7 +811,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); margin-top: .5re
   padding: 18px;
   background: var(--accent);
   color: #000;
-  font-family: 'Syne', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 16px;
   font-weight: 800;
   border-radius: var(--radius-lg);
@@ -826,7 +826,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); margin-top: .5re
 }
 .btn-pay:hover { background: #a7f3d0; transform: translateY(-2px); }
 .btn-pay:disabled { opacity: .6; cursor: not-allowed; transform: none; }
-.pay-secure { font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 400; opacity: .7; }
+.pay-secure { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 400; opacity: .7; }
 
 .checkout-disclaimer {
   font-size: 13px;
@@ -844,7 +844,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); margin-top: .5re
   position: sticky;
   top: 120px;
 }
-.order-summary h2 { font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 1.5rem; }
+.order-summary h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 1.5rem; }
 .summary-item { display: flex; align-items: center; gap: .75rem; margin-bottom: 1rem; }
 .summary-item-info { flex: 1; font-size: 13px; }
 .summary-item-meta { color: var(--text-muted); font-size: 11px; }
@@ -892,7 +892,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); margin-top: .5re
   animation: fadeUp .4s ease;
 }
 .modal-icon { font-size: 3rem; margin-bottom: 1rem; }
-.modal h2 { font-family: 'Syne', sans-serif; font-size: 1.75rem; font-weight: 800; margin-bottom: 1rem; }
+.modal h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.75rem; font-weight: 800; margin-bottom: 1rem; }
 .modal p { color: var(--text-muted); line-height: 1.7; }
 .modal-order { margin-top: .75rem; color: var(--text); }
 
@@ -903,7 +903,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); margin-top: .5re
 .footer-inner { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 2rem; padding-bottom: 2rem; }
 .footer-brand p { color: var(--text-muted); font-size: 14px; margin-top: .5rem; max-width: 280px; }
 .footer-links { display: flex; flex-direction: column; gap: .5rem; }
-.footer-links h4 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 13px; margin-bottom: .25rem; }
+.footer-links h4 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 13px; margin-bottom: .25rem; }
 .footer-links a, .footer-links span { font-size: 14px; color: var(--text-muted); }
 .footer-links a:hover { color: var(--accent); }
 .footer-bottom {
