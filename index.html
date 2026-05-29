@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RePhone – Téléphones Reconditionnés Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ⚠️ BANDEAU AVERTISSEMENT FAKE SITE -->
+  <div class="fake-banner">
+    <span class="fake-icon">⚠️</span>
+    <strong>SITE DE DÉMONSTRATION FICTIF</strong> — Ce site est un faux site de paiement créé à des fins de test uniquement. Aucun achat réel n'est possible. Aucune donnée n'est enregistrée.
+    <span class="fake-icon">⚠️</span>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Re<span>Phone</span></a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">Accueil</a>
+        <a href="catalogue.html" class="nav-link">Catalogue</a>
+        <a href="#" class="nav-link">À propos</a>
+      </nav>
+      <a href="panier.html" class="btn-cart">
+        🛒 <span class="cart-count" id="cartCount">0</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-noise"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">♻️ Reconditionné · Garanti · Éco-responsable</div>
+      <h1 class="hero-title">Le bon téléphone.<br/><em>Pas le bon prix.</em></h1>
+      <p class="hero-sub">Des iPhone, Samsung et Pixel remis à neuf par nos techniciens certifiés. Jusqu'à -60% par rapport au neuf.</p>
+      <div class="hero-cta">
+        <a href="catalogue.html" class="btn-primary">Voir le catalogue</a>
+        <a href="#how" class="btn-ghost">Comment ça marche ?</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>4 800+</strong><span>clients satisfaits</span></div>
+        <div class="stat"><strong>12 mois</strong><span>de garantie</span></div>
+        <div class="stat"><strong>-60%</strong><span>vs prix neuf</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="phone-mockup">
+        <div class="phone-screen">
+          <div class="phone-notch"></div>
+          <div class="phone-ui">
+            <div class="ui-bar"></div>
+            <div class="ui-grid">
+              <div class="ui-app" style="background:#4f8ef7"></div>
+              <div class="ui-app" style="background:#f74f7a"></div>
+              <div class="ui-app" style="background:#4ff7a0"></div>
+              <div class="ui-app" style="background:#f7c94f"></div>
+              <div class="ui-app" style="background:#a04ff7"></div>
+              <div class="ui-app" style="background:#f7714f"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="section featured">
+    <div class="container">
+      <div class="section-header">
+        <h2>Nos meilleures offres</h2>
+        <a href="catalogue.html" class="link-more">Tout voir →</a>
+      </div>
+      <div class="products-grid" id="featuredGrid"></div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section how-it-works" id="how">
+    <div class="container">
+      <h2 class="center-title">Comment ça marche ?</h2>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Collecte & diagnostic</h3>
+          <p>Nous récupérons des téléphones usagés et effectuons un diagnostic complet de 42 points.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>Remise à neuf</h3>
+          <p>Remplacement des pièces défectueuses, nettoyage professionnel, mise à jour logicielle.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Certification & garantie</h3>
+          <p>Chaque appareil reçoit une certification de grade et une garantie de 12 mois.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h3>Livraison rapide</h3>
+          <p>Expédition sous 24h en colissimo. Retour gratuit sous 30 jours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRADES -->
+  <section class="section grades">
+    <div class="container">
+      <h2 class="center-title">Nos grades de reconditionnement</h2>
+      <div class="grades-grid">
+        <div class="grade-card grade-a">
+          <div class="grade-label">Grade A</div>
+          <h3>Comme neuf</h3>
+          <p>Aucune trace d'usure visible. Batterie > 90%. Idéal pour les plus exigeants.</p>
+        </div>
+        <div class="grade-card grade-b">
+          <div class="grade-label">Grade B</div>
+          <h3>Très bon état</h3>
+          <p>Légères micro-rayures invisibles à 30 cm. Batterie > 80%. Le meilleur rapport qualité/prix.</p>
+        </div>
+        <div class="grade-card grade-c">
+          <div class="grade-label">Grade C</div>
+          <h3>Bon état</h3>
+          <p>Rayures visibles à l'usage. Batterie > 75%. Pour ceux qui veulent le prix le plus bas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">Re<span>Phone</span></span>
+        <p>Votre source de confiance pour les téléphones reconditionnés.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <a href="index.html">Accueil</a>
+        <a href="catalogue.html">Catalogue</a>
+      </div>
+      <div class="footer-links">
+        <h4>Contact fictif</h4>
+        <span>contact@rephone-demo.fr</span>
+        <span>01 23 45 67 89</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>⚠️ <strong>SITE FICTIF DE DÉMONSTRATION</strong> — Aucune transaction réelle. Aucune donnée collectée. Créé pour tester des extensions de sécurité de paiement.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    // Affiche les 4 premiers produits en vedette
+    const grid = document.getElementById('featuredGrid');
+    if (grid && typeof products !== 'undefined') {
+      products.slice(0, 4).forEach(p => {
+        grid.innerHTML += productCard(p);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paiement – RePhone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="fake-banner">
+    <span class="fake-icon">⚠️</span>
+    <strong>SITE DE DÉMONSTRATION FICTIF</strong> — Ce site est un faux site de paiement créé à des fins de test uniquement. Aucun achat réel n'est possible. Aucune donnée n'est enregistrée.
+    <span class="fake-icon">⚠️</span>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Re<span>Phone</span></a>
+      <div class="checkout-steps">
+        <span class="step-dot done">✓</span>
+        <span class="step-line done"></span>
+        <span class="step-dot done">✓</span>
+        <span class="step-line active"></span>
+        <span class="step-dot active">3</span>
+      </div>
+      <div></div>
+    </div>
+  </header>
+
+  <section class="section checkout-section">
+    <div class="container checkout-layout">
+
+      <!-- FORMULAIRE DE PAIEMENT -->
+      <div class="checkout-form-wrap">
+        <h1 class="page-title">Paiement</h1>
+
+        <!-- AVERTISSEMENT BIEN VISIBLE -->
+        <div class="checkout-warning">
+          <strong>🚨 DÉMONSTRATION UNIQUEMENT</strong><br/>
+          Ce formulaire est fictif. N'entrez <strong>pas</strong> de vraies coordonnées bancaires. Aucune donnée n'est transmise ni enregistrée.
+        </div>
+
+        <!-- Étape 1 : Informations de livraison -->
+        <div class="form-section">
+          <h2 class="form-section-title">
+            <span class="form-num">1</span> Informations de livraison
+          </h2>
+          <div class="form-grid">
+            <div class="field">
+              <label>Prénom</label>
+              <input type="text" placeholder="Jean" id="firstName" autocomplete="off" />
+            </div>
+            <div class="field">
+              <label>Nom</label>
+              <input type="text" placeholder="Dupont" id="lastName" autocomplete="off" />
+            </div>
+            <div class="field field-full">
+              <label>Adresse</label>
+              <input type="text" placeholder="12 rue de la Paix" id="address" autocomplete="off" />
+            </div>
+            <div class="field">
+              <label>Code postal</label>
+              <input type="text" placeholder="75001" id="zip" autocomplete="off" maxlength="5" />
+            </div>
+            <div class="field">
+              <label>Ville</label>
+              <input type="text" placeholder="Paris" id="city" autocomplete="off" />
+            </div>
+            <div class="field field-full">
+              <label>Email</label>
+              <input type="email" placeholder="jean.dupont@email.fr" id="email" autocomplete="off" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Étape 2 : Mode de livraison -->
+        <div class="form-section">
+          <h2 class="form-section-title">
+            <span class="form-num">2</span> Mode de livraison
+          </h2>
+          <div class="shipping-options">
+            <label class="shipping-opt selected">
+              <input type="radio" name="shipping" value="standard" checked />
+              <div class="shipping-info">
+                <strong>Colissimo Standard</strong>
+                <span>Livraison 3-5 jours ouvrés</span>
+              </div>
+              <span class="shipping-price">4,99 €</span>
+            </label>
+            <label class="shipping-opt">
+              <input type="radio" name="shipping" value="express" />
+              <div class="shipping-info">
+                <strong>Chronopost Express</strong>
+                <span>Livraison le lendemain avant 13h</span>
+              </div>
+              <span class="shipping-price">9,99 €</span>
+            </label>
+            <label class="shipping-opt">
+              <input type="radio" name="shipping" value="relay" />
+              <div class="shipping-info">
+                <strong>Point Relais</strong>
+                <span>Livraison 2-4 jours ouvrés</span>
+              </div>
+              <span class="shipping-price">2,99 €</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Étape 3 : Paiement -->
+        <div class="form-section">
+          <h2 class="form-section-title">
+            <span class="form-num">3</span> Coordonnées de paiement
+          </h2>
+
+          <!-- Sélection méthode -->
+          <div class="payment-methods">
+            <button class="pay-method active" data-method="card">💳 Carte bancaire</button>
+            <button class="pay-method" data-method="paypal">🅿️ PayPal</button>
+            <button class="pay-method" data-method="apple">🍎 Apple Pay</button>
+          </div>
+
+          <!-- Formulaire carte -->
+          <div class="card-form" id="cardForm">
+            <div class="card-preview" id="cardPreview">
+              <div class="card-preview-inner">
+                <div class="card-chip"></div>
+                <div class="card-number-preview" id="cardNumPreview">•••• •••• •••• ••••</div>
+                <div class="card-bottom-preview">
+                  <div>
+                    <div class="card-label-sm">Titulaire</div>
+                    <div class="card-name-preview" id="cardNamePreview">PRÉNOM NOM</div>
+                  </div>
+                  <div>
+                    <div class="card-label-sm">Expire</div>
+                    <div class="card-exp-preview" id="cardExpPreview">MM/AA</div>
+                  </div>
+                </div>
+                <div class="card-logo-preview">VISA</div>
+              </div>
+            </div>
+
+            <div class="form-grid">
+              <div class="field field-full">
+                <label>Numéro de carte <span class="field-fake">(fictif — n'entrez pas de vraie carte)</span></label>
+                <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" autocomplete="off" />
+              </div>
+              <div class="field field-full">
+                <label>Nom sur la carte</label>
+                <input type="text" id="cardName" placeholder="JEAN DUPONT" autocomplete="off" />
+              </div>
+              <div class="field">
+                <label>Date d'expiration</label>
+                <input type="text" id="cardExp" placeholder="MM/AA" maxlength="5" autocomplete="off" />
+              </div>
+              <div class="field">
+                <label>CVV <span class="field-fake">(fictif)</span></label>
+                <input type="text" id="cardCvv" placeholder="•••" maxlength="3" autocomplete="off" />
+              </div>
+            </div>
+          </div>
+
+          <!-- PayPal fictif -->
+          <div class="paypal-form hidden" id="paypalForm">
+            <div class="paypal-mock">
+              <div class="paypal-logo">PayPal</div>
+              <p>Simulation de redirection PayPal — aucune transaction réelle</p>
+              <input type="email" placeholder="email@paypal.com (fictif)" autocomplete="off" />
+            </div>
+          </div>
+
+          <!-- Apple Pay fictif -->
+          <div class="applepay-form hidden" id="applepayForm">
+            <div class="applepay-mock">
+              <div class="applepay-btn">🍎 Payer avec Apple Pay</div>
+              <p>Simulation — aucune transaction réelle</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- BOUTON PAYER -->
+        <button class="btn-pay" id="btnPay">
+          <span id="payBtnLabel">Confirmer la commande fictive</span>
+          <span class="pay-secure">🔒 Simulation sécurisée</span>
+        </button>
+
+        <p class="checkout-disclaimer">
+          ⚠️ Rappel : ce site est une <strong>démonstration fictive</strong>. Aucune donnée saisie n'est transmise à un serveur. Aucun paiement réel ne sera effectué.
+        </p>
+      </div>
+
+      <!-- RÉCAPITULATIF COMMANDE -->
+      <div class="order-summary" id="orderSummary">
+        <h2>Récapitulatif</h2>
+        <div id="summaryItems"><!-- rempli par JS --></div>
+        <div class="summary-divider"></div>
+        <div class="summary-row">
+          <span>Sous-total</span>
+          <span id="summarySubtotal">—</span>
+        </div>
+        <div class="summary-row">
+          <span>Livraison</span>
+          <span id="summaryShipping">4,99 €</span>
+        </div>
+        <div class="summary-row summary-total">
+          <strong>Total</strong>
+          <strong id="summaryTotal">—</strong>
+        </div>
+        <div class="secure-badges">
+          <div class="badge">🔒 SSL simulé</div>
+          <div class="badge">✅ Paiement fictif</div>
+          <div class="badge">♻️ Site de test</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MODAL CONFIRMATION -->
+  <div class="modal-overlay hidden" id="confirmModal">
+    <div class="modal">
+      <div class="modal-icon">✅</div>
+      <h2>Commande fictive passée !</h2>
+      <p>Merci pour votre test. <strong>Aucune transaction réelle n'a été effectuée.</strong></p>
+      <p class="modal-order">N° de commande fictive : <strong id="fakeOrderNum"></strong></p>
+      <a href="index.html" class="btn-primary" style="margin-top:1.5rem;display:inline-block">Retour à l'accueil</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">Re<span>Phone</span></span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>⚠️ <strong>SITE FICTIF DE DÉMONSTRATION</strong> — Aucune transaction réelle. Aucune donnée collectée.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>
