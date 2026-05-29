@@ -130,6 +130,23 @@ img { max-width: 100%; display: block; }
   padding: 1px 7px;
 }
 
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 1.25rem;
+  line-height: 1;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+.nav-toggle:hover { border-color: var(--accent); color: var(--accent); }
+
 /* ============================================================
    BUTTONS
    ============================================================ */
@@ -973,6 +990,37 @@ input[type="range"] { width: 100%; accent-color: var(--accent); margin-top: .5re
   .footer-inner { grid-template-columns: 1fr; }
   .reviews-grid { grid-template-columns: 1fr; }
 }
+@media (max-width: 768px) {
+  /* Bannière non collante : évite le chevauchement avec le header sur mobile */
+  .fake-banner { position: static; font-size: 12px; padding: 8px 16px; }
+  .header { top: 0; }
+
+  /* Menu hamburger */
+  .header-inner { gap: 1rem; }
+  .nav-toggle { display: flex; }
+  .btn-cart { margin-left: auto; }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: .25rem;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    padding: 12px 24px;
+  }
+  .nav.open { display: flex; }
+  .nav-link { padding: 12px 16px; border-radius: var(--radius); }
+
+  /* Colonnes latérales non collantes une fois empilées */
+  .summary-box, .order-summary, .product-detail-img { position: static; }
+
+  /* Hero : plus de hauteur plein écran imposée */
+  .hero { min-height: auto; padding: 3rem 0; }
+}
 @media (max-width: 600px) {
   .products-grid { grid-template-columns: 1fr 1fr; }
   .hero-title { font-size: 2rem; }
@@ -980,4 +1028,19 @@ input[type="range"] { width: 100%; accent-color: var(--accent); margin-top: .5re
   .hero-stats { gap: 1.5rem; }
   .cart-item { grid-template-columns: 60px 1fr; }
   .cart-item-total { display: none; }
+}
+@media (max-width: 480px) {
+  .container { padding: 0 16px; }
+  body { font-size: 14px; }
+  .hero-title { font-size: 1.85rem; }
+  .page-hero h1 { font-size: 2rem; }
+  .page-title { font-size: 1.6rem; }
+  .center-title { font-size: 1.6rem; }
+  .section { padding: 56px 0; }
+  .hero-stats { flex-wrap: wrap; gap: 1.25rem; }
+  .products-grid { grid-template-columns: 1fr; }
+  .modal { padding: 2rem 1.5rem; }
+  .checkout-layout, .cart-layout { gap: 1.5rem; }
+  .checkout-steps { gap: 2px; }
+  .footer-bottom { padding: 1.25rem 16px; }
 }

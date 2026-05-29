@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À propos – RePhone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ⚠️ BANDEAU AVERTISSEMENT FAKE SITE -->
+  <div class="fake-banner">
+    <span class="fake-icon">⚠️</span>
+    <strong>SITE DE DÉMONSTRATION FICTIF</strong> — Ce site est un faux site de paiement créé à des fins de test uniquement. Aucun achat réel n'est possible. Aucune donnée n'est enregistrée.
+    <span class="fake-icon">⚠️</span>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Re<span>Phone</span></a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="catalogue.html" class="nav-link">Catalogue</a>
+        <a href="apropos.html" class="nav-link active">À propos</a>
+      </nav>
+      <a href="panier.html" class="btn-cart">
+        🛒 <span class="cart-count" id="cartCount">0</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>À propos de RePhone</h1>
+      <p>La seconde vie des smartphones, sans compromis.</p>
+    </div>
+  </section>
+
+  <!-- CONTENU -->
+  <section class="section">
+    <div class="container" style="max-width: 760px;">
+      <p style="font-size:1.15rem;color:var(--text);line-height:1.8;margin-bottom:1.5rem;">
+        <strong>RePhone</strong> est une boutique <strong>fictive</strong> de téléphones reconditionnés, créée comme démonstration pour tester des extensions de sécurité de paiement. Tout y est simulé : les produits, les prix, les avis et le tunnel de commande.
+      </p>
+      <p style="color:var(--text-muted);line-height:1.8;margin-bottom:1.25rem;">
+        Dans son scénario, RePhone donne une seconde vie aux smartphones : collecte d'appareils usagés, diagnostic complet, remise à neuf par des techniciens certifiés, puis certification d'un grade de qualité. L'objectif affiché est simple — proposer des téléphones fiables jusqu'à 60 % moins chers que le neuf, tout en réduisant les déchets électroniques.
+      </p>
+      <p style="color:var(--text-muted);line-height:1.8;margin-bottom:1.25rem;">
+        Chaque appareil de la démo est présenté avec sa marque, son grade (A, B ou C), l'état de sa batterie et une garantie fictive de 12 mois, afin de reproduire au plus près l'expérience d'une vraie boutique en ligne.
+      </p>
+
+      <div class="checkout-warning" style="margin: 2rem 0;">
+        <strong>🚨 Rappel</strong><br/>
+        Ce site est une démonstration. Aucun paiement réel n'est effectué et aucune donnée saisie n'est transmise ni enregistrée.
+      </div>
+
+      <div class="step" style="margin-bottom: 2rem;">
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-weight:700;margin-bottom:.75rem;">Contact fictif</h3>
+        <p style="color:var(--text-muted);margin-bottom:.35rem;">📧 contact@rephone-demo.fr</p>
+        <p style="color:var(--text-muted);">📞 01 23 45 67 89</p>
+      </div>
+
+      <a href="catalogue.html" class="btn-primary">Voir le catalogue</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">Re<span>Phone</span></span>
+        <p>Votre source de confiance pour les téléphones reconditionnés.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <a href="index.html">Accueil</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="apropos.html">À propos</a>
+      </div>
+      <div class="footer-links">
+        <h4>Contact fictif</h4>
+        <span>contact@rephone-demo.fr</span>
+        <span>01 23 45 67 89</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>⚠️ <strong>SITE FICTIF DE DÉMONSTRATION</strong> — Aucune transaction réelle. Aucune donnée collectée. Créé pour tester des extensions de sécurité de paiement.</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

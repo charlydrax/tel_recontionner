@@ -116,6 +116,16 @@ function productCard(p) {
 document.addEventListener('DOMContentLoaded', () => {
   updateCartUI();
 
+  // Menu hamburger (mobile)
+  const navToggle = document.getElementById('navToggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', open);
+    });
+  }
+
   // Shipping options toggle
   document.querySelectorAll('.shipping-opt').forEach(opt => {
     opt.addEventListener('click', () => {
